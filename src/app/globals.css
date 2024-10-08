@@ -19,3 +19,22 @@ body {
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #006fee;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color:#151412; /* Cor de fundo da barra de rolagem */
+}

@@ -1,60 +1,51 @@
-"use client";
+import Image from 'next/image';
+import React from 'react';
+import { motion } from 'framer-motion';
 
-import Image from "next/image";
-import { Tabs } from "./ui/tabs";
-
-export default function TabsDemo() {
-    const tabs = [
-        {
-            title: "Despesas",
-            value: "Despesas",
-            content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-2 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-blue-500 grid grid-cols-1 md:grid-cols-2">
-                    <div className="hidden md:block">
-                        <p>Controle de Despesas
-                            <p className="text-lg py-6">Visualize seus gastos de forma organizada, classificados por categorias como alimentação, transporte, lazer, moradia, etc.</p>
-                        </p>
-                    </div>
-                    <div className="bg-cover w-full bg-no-repeat bg-[url('/imagesHome/despesas.png')] rounded-2xl"></div>
-                </div>
-            ),
-        },
-        {
-            title: "Dashboard",
-            value: "Dashboard",
-            content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-2 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-blue-500 grid grid-cols-1 md:grid-cols-2">
-                    <div className="hidden md:block">
-                        <p>Dashboard
-                            <p className="text-lg py-6">Nossa dashboard é muito mais do que uma simples tela: é o seu centro de comando financeiro, oferecendo uma visão geral clara, intuitiva de como seu dinheiro está sendo usado, categorizado e organizado.</p>
-                        </p>
-                    </div>
-                    <div className="bg-cover w-full bg-no-repeat bg-[url('/imagesHome/DASHBOARD.png')] rounded-2xl"></div>
-                </div>
-            ),
-        },
-        {
-            title: "Investimentos",
-            value: "Investimentos",
-            content: (
-                <div className="w-full overflow-hidden relative h-full rounded-2xl p-2 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-blue-500 grid grid-cols-1 md:grid-cols-2">
-                    <div className="hidden md:block">
-                        <p>Controle de Investimento
-                            <p className="text-lg py-6">Visualize seus gastos de forma organizada, classificados por categorias como alimentação, transporte, lazer, moradia, etc.</p>
-                        </p>
-                    </div>
-                    <div className="bg-cover w-full bg-no-repeat bg-[url('/imagesHome/investimento.png')] rounded-2xl xs:grid xs:grid-cols-1"> </div>
-                </div>
-            ),
-        }
-
-    ];
-
+export default function ResponsiveSistem() {
     return (
-        <div className="h-[300px] [perspective:1000px] relative flex flex-col w-full   items-start justify-start" >
-            <Tabs tabs={tabs} />
-        </div>
+        <motion.div
+            initial={{ opacity: 0 }} // Inicia invisível
+            animate={{ opacity: 1 }} // Aparece suavemente
+            transition={{ duration: 1.5 }} // Duração da transição
+            className="bg-[#c6c6c6]-50 grid grid-cols-1 md:grid-cols-2 p-6 gap-6"
+        >
+            {/* Bloco 1 */}
+            <motion.div
+                initial={{ scale: 0.9, opacity: 0 }} // Inicia menor e invisível
+                animate={{ scale: 1, opacity: 1 }} // Cresce e aparece
+                transition={{ duration: 1, ease: "easeInOut" }} // Transição suave
+                className="rounded-xl p-8 flex flex-col justify-center"
+            >
+                <motion.div
+                    initial={{ opacity: 0, x: -100 }} // Começa fora da tela à esquerda
+                    animate={{ opacity: 1, x: 0 }} // Move para o centro e aparece
+                    transition={{ duration: 1.2, ease: "easeInOut" }} // Transição suave
+                >
+                    <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-4 text-center border-b-2 border-gray-300 pb-2">
+                        A gestão das suas finanças, facilitada e sempre à mão.
+                    </h2>
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        Nosso sistema foi desenvolvido com um foco especial em responsividade, garantindo uma experiência de uso fluida e eficiente em qualquer dispositivo. Independentemente da resolução da tela ou do tipo de aparelho utilizado, seja desktop, tablet ou smartphone.
+                    </p>
+                </motion.div>
+            </motion.div>
+
+            {/* Bloco 2 */}
+            <motion.div
+                initial={{ opacity: 0, x: 100 }} // Começa fora da tela à direita
+                animate={{ opacity: 1, x: 0 }} // Move para o centro e aparece
+                transition={{ duration: 1.2, ease: "easeInOut" }} // Transição suave
+                className="w-full rounded-xl flex items-center justify-center p-6"
+            >
+                <Image
+                    src="/imagesHome/iPhone 15 Mockup, Perspective.png"
+                    alt="Mockup do iPhone"
+                    width={400}
+                    height={400}
+                    className="rounded-md"
+                />
+            </motion.div>
+        </motion.div>
     );
 }
-
-

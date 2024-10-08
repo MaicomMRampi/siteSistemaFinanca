@@ -73,18 +73,21 @@ export default function Header() {
                     </Link>
                 </NavbarBrand>
                 <NavbarItem>
-                    <Link className={styleLink} href="/">
-                        INÍCIO
+                    <Link href="/" className="relative inline-block text-white no-underline group scroll-smooth font-bold">
+                        INICIO
+                        <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full" />
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link className={styleLink} href="/quemsomos" >
+                    <Link href="/quemsomos" className="relative inline-block text-white no-underline group font-bold">
                         QUEM SOMOS
+                        <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full" />
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link className={styleLink} href="#contato">
+                    <Link href="#Contato" className="relative inline-block text-white no-underline group scroll-smooth font-bold">
                         CONTATO
+                        <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full" />
                     </Link>
                 </NavbarItem>
                 <NavbarItem>

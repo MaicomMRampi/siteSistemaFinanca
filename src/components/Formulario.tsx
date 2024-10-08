@@ -53,7 +53,7 @@ export default function Formulario() {
     }
 
     return (
-        <div className="w-full h-full bg-[#F5F5F5] pt-8">
+        <div className="w-full h-full bg-background pt-8">
             <div className='w-[90%] h-full mx-auto   gap-5 scroll-behavior ' id="contato" >
                 <div className='  bg-black grid grid-cols-1 sm:grid-cols-2 rounded-lg'>
                     <div className="w-full">

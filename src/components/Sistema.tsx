@@ -17,7 +17,7 @@ export default function Home() {
                         </span>
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl font-extralight mt-4">
-                        Online, acessível e completo para atender todas as suas necessidades<Link className="text-blue-500 font-bold text-lg sm:text-xl md:text-2xl " href="#valor">. Confira o valor. </Link>
+                        Online, acessível e completo para atender todas as suas necessidades<Link className="text-blue-500 font-bold text-lg sm:text-xl md:text-2xl " href="#valor"> Confira o valor. </Link>
                     </p>
                 </div>
                 <div className="w-full relative flex justify-center items-center">

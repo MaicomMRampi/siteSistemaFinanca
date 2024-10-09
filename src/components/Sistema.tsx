@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FlipWords } from "./ui/flip-words";
 import { Button, Link } from "@nextui-org/react";
 
-const words = ["suas finanças", "seus investimentos", " suas despesas"];
+const words = [" suas finanças", " seus investimentos", " suas despesas"];
 
 export default function Home() {
     return (

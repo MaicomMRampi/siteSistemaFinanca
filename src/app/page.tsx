@@ -5,7 +5,8 @@ import BlocoValor from "@/components/blocoValor"
 import BlocotTsteGratis from "@/components/blocoTesteGratis"
 import Cards from "@/components/cards";
 import { Button } from "@nextui-org/react";
-
+import Footer from "@/components/Footer";
+import Formulario from "@/components/Formulario";
 export default function Home() {
     return (
         <div className="w-full h-full bg-background">
@@ -26,6 +27,9 @@ export default function Home() {
                 </div>
                 <div className="">
                     <BlocoValor />
+                </div>
+                <div className="">
+                    <Formulario />
                 </div>
             </div>
         </div>

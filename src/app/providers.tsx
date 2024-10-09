@@ -10,7 +10,6 @@ function App({ children }: { children: React.ReactNode }) {
         <NextUIProvider>
             <Header />
             {children}
-            <Formulario />
             <Footer />
         </NextUIProvider>
     );

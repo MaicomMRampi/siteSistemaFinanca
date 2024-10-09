@@ -85,13 +85,13 @@ export default function Header() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="#Contato" className="relative inline-block text-white no-underline group scroll-smooth font-bold">
+                    <Link href="http://localhost:3000/#contato" className="relative inline-block text-white no-underline group scroll-smooth font-bold">
                         CONTATO
                         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full" />
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link className={styleLink} href="https://wealthpulse.com.br/login" target="_blank">
+                    <Link className={styleLink} href="/Gemini_Generated_Image_k5t0txk5t0txk5t0.jpg" target="_blank">
                         <Button className=" font-semibold text-sm  hover:text-black" variant="ghost" color="primary">COMEÇE A USAR</Button>
                     </Link>
                 </NavbarItem>

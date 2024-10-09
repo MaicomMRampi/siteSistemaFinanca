@@ -53,7 +53,7 @@ export default function Header() {
                         <div>
                             <h4 className="text-2xl font-bold">
                                 Fluxo do <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-2xl font-bold">
-                                    Dinheiro
+                                    Capital
                                 </span>
 
                             </h4>
@@ -66,7 +66,7 @@ export default function Header() {
                     <Link href="/">
                         <h4 className="text-2xl font-bold">
                             Fluxo do <span className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent text-2xl font-bold">
-                                Dinheiro
+                                Capital
                             </span>
 
                         </h4>

@@ -12,7 +12,7 @@ export default function Home() {
             <div className="w-[90%] h-full mx-auto bg-[background">
                 <Sistema />
                 <div className="py-6 border-t-1">
-                    <h1 className="text-center text-2xl py-6 font-extralight">Oque um bom <span className="font-bold text-blue-500">Fluxo do dinheiro</span> bem organizado pode lhe proporcionar ?</h1>
+                    <h1 className="text-center text-2xl py-6 font-extralight">Oque um bom <span className="font-bold text-blue-500">Fluxo do capital</span> bem organizado pode lhe proporcionar ?</h1>
                 </div>
                 <Cards />
                 <div className="py-6">

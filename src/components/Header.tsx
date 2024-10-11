@@ -85,7 +85,7 @@ export default function Header() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="http://localhost:3000/#contato" className="relative inline-block text-white no-underline group scroll-smooth font-bold">
+                    <Link href="https://fluxodocapital.com.br/#contato" className="relative inline-block text-white no-underline group scroll-smooth font-bold">
                         CONTATO
                         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full" />
                     </Link>

@@ -6,7 +6,7 @@ const ValueCard = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <div className=" py-6 flex items-center justify-center shadow-lg transition-transform transform hover:scale-105 duration-300">
-                <Image
+                <img
                     src="/Gemini_Generated_Image_iyp3e7iyp3e7iyp3.jpg"
                     alt="Mockup do iPhone"
                     width={600}

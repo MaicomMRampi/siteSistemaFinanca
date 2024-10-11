@@ -38,7 +38,7 @@ export default function ResponsiveSistem() {
                 transition={{ duration: 1.2, ease: "easeInOut" }} // Transição suave
                 className="w-full rounded-xl flex items-center justify-center p-6"
             >
-                <Image
+                <img
                     src="/imagesHome/iPhone 15 Mockup, Perspective.png"
                     alt="Mockup do iPhone"
                     width={400}
